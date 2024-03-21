@@ -6,12 +6,45 @@ p
     max-width: 35em;
 }
 
-body{
-    padding-left: 3em;
+body
+{
+    background-color: #23202d;
+    color: #ebeaef;
+    font-family: "Oxygen", sans-serif;
+
     font-size: 18px;
     line-height: 1.5;
 
     /* hhhhhhhh */
+    display: grid;
+    grid-template-areas: "head head" "nav main" "foot foot";
+    grid-template-columns: 15em 1fr;
+    grid-template-rows: 5em 1fr 5rem;
+}
+
+body > header
+{
+    grid-area: head;
+    background-color: #17151e;
+    padding-left: 3%;
+}
+
+body > nav
+{
+    grid-area: nav;
+    color: #fee285;
+    padding-left: 9%;
+}
+
+body > main
+{
+    grid-area: main;
+    padding-left: 1em;
+}
+
+body > footer
+{
+    grid-area: foot;
 }
 
 h1, h2, h3, h4
