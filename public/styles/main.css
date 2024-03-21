@@ -1,0 +1,20 @@
+body#about img {height: 15em;}
+body#portfolio img {height: 15em;}
+
+p
+{
+    max-width: 35em;
+}
+
+body{
+    padding-left: 3em;
+    font-size: 18px;
+    line-height: 1.5;
+
+    /* hhhhhhhh */
+}
+
+h1, h2, h3, h4
+{
+    line-height: 0.7;
+}
