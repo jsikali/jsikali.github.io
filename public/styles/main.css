@@ -1,11 +1,14 @@
-body#about img {height: 15em;}
+body#about img {height: 25em;}
 body#portfolio img {height: 15em;}
+/* body#portfolio header img {height: 3em;margin-left: 93%; margin-top: auto; margin-bottom: auto} */
+/* body header h1{display:inline;} */
 
 p
 {
     max-width: 35em;
 }
 
+/* something something these colors get modified in the html */
 body
 {
     background-color: #23202d;
@@ -27,6 +30,26 @@ body > header
     grid-area: head;
     background-color: #17151e;
     padding-left: 3%;
+
+    /* pain */
+    display: grid;
+    grid-template-areas: "h1 h1" "img toggle";
+    /* grid-template-columns: 15em 1fr; */
+    grid-template-columns: 1fr max-content;
+}
+
+body > header > h1
+{
+    /* grid-area: h1; */
+    display: inline;
+    background-color: blue;
+}
+
+body > header > img#colorSwitch
+{
+    /* grid-area: img; */
+    height: 5em;
+    background-color: red;
 }
 
 body > nav
