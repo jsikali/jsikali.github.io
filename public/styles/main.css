@@ -2,6 +2,7 @@ body#about img {height: 25em;}
 body#portfolio img {height: 15em;}
 /* body#portfolio header img {height: 3em;margin-left: 93%; margin-top: auto; margin-bottom: auto} */
 /* body header h1{display:inline;} */
+body img#background {background-color: aqua;}
 
 p
 {
@@ -12,6 +13,9 @@ p
 body
 {
     background-color: #23202d;
+    background-image: url("../images/background.png");
+    background-size: 75%;
+    background-repeat: repeat;
     color: #ebeaef;
     font-family: "Oxygen", sans-serif;
 
@@ -42,14 +46,12 @@ body > header > h1
 {
     /* grid-area: h1; */
     display: inline;
-    background-color: blue;
 }
 
 body > header > img#colorSwitch
 {
     /* grid-area: img; */
     height: 5em;
-    background-color: red;
 }
 
 body > nav
@@ -73,4 +75,9 @@ body > footer
 h1, h2, h3, h4
 {
     line-height: 0.7;
+}
+
+.strikethrough
+{
+    text-decoration: line-through;
 }
