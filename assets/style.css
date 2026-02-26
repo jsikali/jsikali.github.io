@@ -1,0 +1,22 @@
+/* shoutout realtimecolors.com */
+@import url('https://fonts.googleapis.com/css?family=Sono:700|Sono:400');
+
+body {
+  font-family: 'Sono';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Sono';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 2.489rem; /* 39.84px */}
+h2 {font-size: 2.074rem; /* 33.12px */}
+h3 {font-size: 1.728rem; /* 27.68px */}
+h4 {font-size: 1.440rem; /* 23.04px */}
+h5 {font-size: 1.200rem; /* 19.2px */}
+
+small {font-size: 0.833rem; /* 13.28px */}
