@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
@@ -10,12 +10,33 @@
 <nav>
   <a href="/">Home</a> |
   <a href="/blog">Blog</a> |
-  <a href="/about">About</a>
+  <a href="/about">About</a> |
+  <button id="theme-toggle">toggle theme</button>
 </nav>
 
 <hr>
 
 {{ content }}
+
+<script>
+const toggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+// load saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  root.setAttribute('data-theme', savedTheme);
+} else {
+  root.setAttribute('data-theme', 'dark');
+}
+
+toggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+</script>
 
 </body>
 </html>

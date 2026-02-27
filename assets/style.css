@@ -1,22 +1,68 @@
 /* shoutout realtimecolors.com */
-@import url('https://fonts.googleapis.com/css?family=Sono:700|Sono:400');
+/* also shoutout me forgetting the colors */
+
+@import url('https://fonts.googleapis.com/css?family=Sono:700|Sono:300');
+
+/* variables */
+:root[data-theme="light"] {
+  --text: #26272c;
+  --background: #dedfe3;
+  --primary: #ffc800;
+  --secondary: #f25a73;
+  --accent: #778efd;
+}
+
+:root[data-theme="dark"] {
+  --text: #dedfe3;
+  --background: #26272c;
+  --primary: #ffc700;
+  --secondary: #f15871;
+  --accent: #778efd;
+}
+
+/* base color stuff */
+html {
+  font-size: 100%;
+}
 
 body {
-  font-family: 'Sono';
+  font-family: 'Sono', sans-serif;
   font-weight: 400;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
 }
 
+/* font and size */
 h1, h2, h3, h4, h5 {
-  font-family: 'Sono';
+  font-family: 'Sono', sans-serif;
   font-weight: 700;
+  color: var(--primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-html {font-size: 100%;} /* 16px */
+h1 { font-size: 2.489rem; }
+h2 { font-size: 2.074rem; }
+h3 { font-size: 1.728rem; }
+h4 { font-size: 1.440rem; }
+h5 { font-size: 1.200rem; }
 
-h1 {font-size: 2.489rem; /* 39.84px */}
-h2 {font-size: 2.074rem; /* 33.12px */}
-h3 {font-size: 1.728rem; /* 27.68px */}
-h4 {font-size: 1.440rem; /* 23.04px */}
-h5 {font-size: 1.200rem; /* 19.2px */}
+small {
+  font-size: 0.833rem;
+  color: var(--accent);
+}
 
-small {font-size: 0.833rem; /* 13.28px */}
+/* links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* nav */
+nav a {
+  color: var(--text);
+  margin-right: 1rem;
+}
