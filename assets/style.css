@@ -1,7 +1,7 @@
 /* shoutout realtimecolors.com */
 /* also shoutout me forgetting the colors */
 
-@import url('https://fonts.googleapis.com/css?family=Sono:700|Sono:300');
+@import url('https://fonts.googleapis.com/css?family=Oxygen%20Mono:400');
 
 /* variables */
 :root[data-theme="light"] {
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Sono', sans-serif;
+  font-family: 'Oxygen Mono', sans-serif;
   font-weight: 400;
   background: var(--background);
   color: var(--text);
@@ -36,24 +36,29 @@ body {
 }
 
 /* font and size */
+body {
+  font-family: 'Oxygen Mono';
+  font-weight: 400;
+}
+
 h1, h2, h3, h4, h5 {
-  font-family: 'Sono', sans-serif;
-  font-weight: 700;
-  color: var(--primary);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-family: 'Oxygen Mono';
+  font-weight: 400;
 }
 
-h1 { font-size: 2.489rem; }
-h2 { font-size: 2.074rem; }
-h3 { font-size: 1.728rem; }
-h4 { font-size: 1.440rem; }
-h5 { font-size: 1.200rem; }
+html {font-size: 100%;} /* 16px */
 
-small {
-  font-size: 0.833rem;
-  color: var(--accent);
-}
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
 
 /* links */
 a {

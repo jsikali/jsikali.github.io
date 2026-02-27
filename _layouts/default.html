@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/favicon.ico' | relative_url }}">
 </head>
 <body>
 
@@ -11,7 +12,7 @@
   <a href="/">Home</a> |
   <a href="/blog">Blog</a> |
   <a href="/about">About</a> |
-  <button id="theme-toggle">toggle theme</button>
+  <span id="theme-toggle" style="cursor: pointer;">🌙</span>
 </nav>
 
 <hr>
@@ -22,19 +23,29 @@
 const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
-// load saved theme
-const savedTheme = localStorage.getItem('theme');
+// for theme icon not being an ugly button
+function updateIcon(theme) {
+  toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+// load saved theme or default to dark
+let savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
   root.setAttribute('data-theme', savedTheme);
 } else {
-  root.setAttribute('data-theme', 'dark');
+  savedTheme = 'dark';       // <-- store default in savedTheme
+  root.setAttribute('data-theme', savedTheme);
 }
+
+// set initial emoji
+updateIcon(savedTheme);
 
 toggle.addEventListener('click', () => {
   const current = root.getAttribute('data-theme');
   const next = current === 'dark' ? 'light' : 'dark';
   root.setAttribute('data-theme', next);
   localStorage.setItem('theme', next);
+  updateIcon(next);
 });
 </script>
 
