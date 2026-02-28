@@ -12,7 +12,7 @@
 :root[data-theme="light"] {
   --text: #26272c;
   --background: #dedfe3;
-  --primary: #ffc800;
+  --primary: #a376fc; /* yElLoW bAd sigh :( */
   --secondary: #f25a73;
   --accent: #778efd;
 }
@@ -81,4 +81,4 @@ a {
 nav a {
   color: var(--text);
   margin-right: 1rem;
-}
+} 

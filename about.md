@@ -11,8 +11,8 @@ I'm a college student at Rose-Hulman Institue of Technology studying computer sc
 Some interests of mine include:
 - Cryptology
 	- Hopefully I find a topic worthy of a senior thesis. Possible topics I've considered in passing include:
-		- <span class="secondaryclass">Sudoku based encryption</span> as initially seen [in this arXiv paper](https://arxiv.org/abs/2601.10119). "Sudoku based encryption" already sounds intruiging, and applying it beyond images/video/audio sounds like a fun problem.
-		- <span class="secondaryclass">Lattice based encryption</span>, particularly how implementation mistakes could be exploited. If my own experience of implementing [Kangaroo12](https://keccak.team/kangarootwelve.html) holds any weight, its *really* easy to mess up implementation of what's otherwise secure. This could be generalized to just looking at potential implementation flaws in FIPS 203-205.
+		- <span class="secondarycolor">Sudoku based encryption</span> as initially seen [in this arXiv paper](https://arxiv.org/abs/2601.10119). "Sudoku based encryption" already sounds intruiging, and applying it beyond images/video/audio sounds like a fun problem.
+		- <span class="secondarycolor">Lattice based encryption</span>, particularly how implementation mistakes could be exploited. If my own experience of implementing [Kangaroo12](https://keccak.team/kangarootwelve.html) holds any weight, its *really* easy to mess up implementation of what's otherwise secure. This could be generalized to just looking at potential implementation flaws in FIPS 203-205.
 - Vulnerability analysis
 	- (cont. when in more of a writing mood)
 - Bad "malware"
