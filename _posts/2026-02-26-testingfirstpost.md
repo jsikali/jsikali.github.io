@@ -1,8 +1,13 @@
 ---
 layout: default
-title: My First Post
+title: To do
 ---
 
-# testing first post
+# testing first post (to do list)
 
-omg i actually get around to doing webdev?! after 2 years?!?!?!
+Fun fact, I first wanted to put together a personal site roughly 2 years ago! Web dev isn't really my passion... lol
+
+Possible things to talk about:
+[ ] rhats (except for the ferpa violation part)
+[ ] paratect (c++ yay)
+[ ] 

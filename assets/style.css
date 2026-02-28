@@ -1,7 +1,12 @@
 /* shoutout realtimecolors.com */
 /* also shoutout me forgetting the colors */
 
-@import url('https://fonts.googleapis.com/css?family=Oxygen%20Mono:400');
+@font-face {
+  font-family: 'Oxygen Mono';
+  src: url('/assets/fonts/OxygenMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* variables */
 :root[data-theme="light"] {
@@ -35,6 +40,11 @@ body {
   line-height: 1.6;
 }
 
+/* to adj text colors */
+.primarycolor { color: var(--primary); }
+.secondarycolor { color: var(--secondary); }
+.accentcolor { color: var(--accent); }
+
 /* font and size */
 body {
   font-family: 'Oxygen Mono';
@@ -48,7 +58,8 @@ h1, h2, h3, h4, h5 {
 
 html {font-size: 100%;} /* 16px */
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+h1 {font-size: 4.210rem; /* 67.36px */
+    color: var(--primary);}
 
 h2 {font-size: 3.158rem; /* 50.56px */}
 
