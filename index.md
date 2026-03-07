@@ -8,4 +8,4 @@ title: home page
 I like inabakumori (my profile picture is part of the background art in [relayouter](https://www.youtube.com/watch?v=b56xjtP6Qac))  
 Also, I'm a university student (looking for an internship!) [more about that here](/about) 
 
-Hopefully I will do enough things for the blog to not be barren lol
+This site is still very much incomplete... sorry! I update it in my free time so it's less barren. If there's some bug, email me to complain.
