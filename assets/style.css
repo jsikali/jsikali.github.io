@@ -54,12 +54,12 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Oxygen Mono';
   font-weight: 400;
+  color: var(--primary);
 }
 
 html {font-size: 100%;} /* 16px */
 
-h1 {font-size: 2.442rem; /* 39.04px */
-    color: var(--primary);}
+h1 {font-size: 2.442rem; /* 39.04px */}
 
 h2 {font-size: 1.954rem; /* 31.2px */}
 
