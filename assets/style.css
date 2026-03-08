@@ -36,7 +36,9 @@ body {
   background: var(--background);
   color: var(--text);
   margin: 0;
-  padding: 2rem;
+  padding: 10%; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   line-height: 1.6;
 }
 
@@ -45,18 +47,7 @@ body {
 .secondarycolor { color: var(--secondary); }
 .accentcolor { color: var(--accent); }
 
-/* font and size */
-body {
-  font-family: 'Oxygen Mono';
-  font-weight: 400;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Oxygen Mono';
-  font-weight: 400;
-  color: var(--primary);
-}
-
+/* size */
 html {font-size: 100%;} /* 16px */
 
 h1 {font-size: 2.442rem; /* 39.04px */}
@@ -82,3 +73,8 @@ nav a {
   color: var(--text);
   margin-right: 1rem;
 } 
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  color: var(--primary);
+}
