@@ -21,7 +21,7 @@ const vertexShader =
 
 const grayscaleFrag = 
 `
-	#	glsl's public static void main string args i guess
+	//	glsl's public static void main string args i guess
 	precision mediump float;
 	uniform sampler2D u_image;
 	varying vec2 v_uv;
@@ -36,7 +36,7 @@ const grayscaleFrag =
 
 const invertFrag = 
 `
-	#	glsl's public static void main string args i guess
+	//	glsl's public static void main string args i guess
 	precision mediump float;
 	uniform sampler2D u_image;
 	varying vec2 v_uv;
@@ -66,20 +66,34 @@ shaderSelect.addEventListener("change", renderFiltered);
 
 // handle image upload
 img.onload = () => {
-	// have canvas match image (maybe adj to scale, idk)
-	canvas.width = img.width;
-	canvas.height = img.height;
+	// scale canvases
+	let maxWidth = document.getElementById("playground").clientWidth;
+	let drawWidth = img.width;
+	let drawHeight = img.height;
 
-	filteredCanvas.width = img.width;
-	filteredCanvas.height = img.height;
+	if (img.width > maxWidth)
+	{
+		const scale = maxWidth / img.width;
 
-	// put image on canvas
-	ctx.drawImage(img, 0, 0);
+		drawWidth = img.width * scale;
+		drawHeight = img.height * scale;
+	}
+
+	canvas.width = drawWidth;
+	canvas.height = drawHeight;
+
+	filteredCanvas.width = drawWidth;
+	filteredCanvas.height = drawHeight;
+
+	// draw scaled original
+	ctx.drawImage(img, 0, 0, drawWidth, drawHeight);
+
+	// upload original texture to GPU
+	initTexture();
 
 	// render image w/shaders
 	 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
-    initTexture();
     initShaders();
     renderFiltered();
 };
