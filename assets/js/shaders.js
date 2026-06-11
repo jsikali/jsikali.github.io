@@ -14,7 +14,10 @@ const vertexShader =
 
 	void main()
 	{
-		v_uv = a_position * 0.5 + 0.5;
+		v_uv = vec2(
+			a_position.x * 0.5 + 0.5,
+			1.0 - (a_position.y * 0.5 + 0.5)
+		);
 		gl_Position = vec4(a_position, 0.0, 1.0);
 	}
 `;
@@ -117,7 +120,9 @@ function initTexture()
 
     gl.bindTexture(gl.TEXTURE_2D, texture);
 
-    gl.texImage2D(
+	//  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true); // fixes it being upside down :3
+    // yay origin in top left
+	 gl.texImage2D(
         gl.TEXTURE_2D,
         0,
         gl.RGBA,
